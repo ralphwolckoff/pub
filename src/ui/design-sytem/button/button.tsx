@@ -49,11 +49,11 @@ export const Button = ({
 
   switch (variant) {
     case "accent":
-      variantStyle = "bg-primary hover:bg-primary-400 text-white rounded";
+      variantStyle = "bg-primary-400 hover:bg-gray-800/12 rounded-[5px]";
       break;
     case "secondary":
       variantStyle =
-        "bg-primary-200 hover:bg-primary-300/50 text-primary rounded";
+        "bg-gray-950 hover:bg-gray-800/50 text-white rounded-[5px] ";
       break;
     case "outline":
       variantStyle =
@@ -87,7 +87,7 @@ export const Button = ({
 
   switch (size) {
     case "small":
-      sizeStyle = `text-caption3 font-medium ${
+      sizeStyle = `text-caption3 font-medium w-full px-7 py-5 ${
         variant === "ico"
           ? "flex items-center justify-center w-[40px] h-[40px]"
           : "px-[14px] py-[12px]"
@@ -98,7 +98,7 @@ export const Button = ({
       sizeStyle = `text-caption2 font-medium ${
         variant === "ico"
           ? "flex items-center justify-center w-[50px] h-[50px]"
-          : "px-[18px] py-[15px]"
+          : "px-[18px] py-[5px]"
       }`;
       icoSize = 20;
       break;
