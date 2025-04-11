@@ -121,12 +121,14 @@ exports.Prisma.UserScalarFieldEnum = {
   id: 'id',
   email: 'email',
   password: 'password',
+  how_did_hear: 'how_did_hear',
   role: 'role'
 };
 
 exports.Prisma.ProfileScalarFieldEnum = {
   id: 'id',
   username: 'username',
+  imageprofile: 'imageprofile',
   bio: 'bio',
   userId: 'userId'
 };
@@ -142,24 +144,9 @@ exports.Prisma.PostScalarFieldEnum = {
   authorId: 'authorId'
 };
 
-exports.Prisma.CategoryScalarFieldEnum = {
-  id: 'id',
-  name: 'name'
-};
-
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
-};
-
-exports.Prisma.UserOrderByRelevanceFieldEnum = {
-  email: 'email',
-  password: 'password'
-};
-
-exports.Prisma.ProfileOrderByRelevanceFieldEnum = {
-  username: 'username',
-  bio: 'bio'
 };
 
 exports.Prisma.NullsOrder = {
@@ -167,14 +154,22 @@ exports.Prisma.NullsOrder = {
   last: 'last'
 };
 
+exports.Prisma.UserOrderByRelevanceFieldEnum = {
+  email: 'email',
+  password: 'password',
+  how_did_hear: 'how_did_hear'
+};
+
+exports.Prisma.ProfileOrderByRelevanceFieldEnum = {
+  username: 'username',
+  imageprofile: 'imageprofile',
+  bio: 'bio'
+};
+
 exports.Prisma.PostOrderByRelevanceFieldEnum = {
   title: 'title',
   content: 'content',
   image: 'image'
-};
-
-exports.Prisma.CategoryOrderByRelevanceFieldEnum = {
-  name: 'name'
 };
 exports.Role = exports.$Enums.Role = {
   USER: 'USER',
@@ -184,8 +179,7 @@ exports.Role = exports.$Enums.Role = {
 exports.Prisma.ModelName = {
   User: 'User',
   Profile: 'Profile',
-  Post: 'Post',
-  Category: 'Category'
+  Post: 'Post'
 };
 
 /**
