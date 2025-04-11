@@ -30,11 +30,12 @@ export const Input = ({
         type={type}
         placeholder={placeholder}
         className={clsx(
+          "rounded-full py-3 px-5 text-xs bg-gray-950",
           isLoading && "cursor-not-allowed",
           errors[id]
-            ? "placeholder-alert-danger text-alert-danger "
+            ? "placeholder-red-300 text-red-500 "
             : "placeholder-gray-600",
-          "w-full p-4 font-light border border-gray-400 rounded focus:outline-none focus:ring-1 focus:ring-primary "
+          "w-full p-4 font-light  focus:outline-none focus:ring-1 focus:ring-primary "
         )}
         disabled={isLoading}
         {...register(id, {
@@ -46,7 +47,7 @@ export const Input = ({
         autoComplete={isAutoCompleted ? "on" : "off"}
       />
       {errors[id] && (
-        <Typography variant="caption4" component="div" theme="danger">
+        <Typography variant="body-xs" component="div" theme="danger">
           {errors[id]?.message}
         </Typography>
       )}

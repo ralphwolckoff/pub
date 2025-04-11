@@ -5,7 +5,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 export const HeroTop = () => {
   return (
-    <Container className="px-2">
+    <Container className="px-2 py-3">
       <a href="#/">
         <div className="relative  h-[626px] rounded-[20px] overflow-hidden">
           <div className="relative flex items-end h-full  opacity-90 px-10 py-10 z-10 bg-gradient-to-r from-[#f6f6f6]/0 to-[#000000]/80">

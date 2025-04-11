@@ -5,6 +5,15 @@
   --foreground: #171717;
 }
 
+.animate,
+a,
+a:hover {
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 /* Define theme colors as CSS variables */
 :root {
   --color-white: #ffffff;

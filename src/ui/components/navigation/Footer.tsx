@@ -7,6 +7,7 @@ import Link from "next/link";
 import { LinkTypes } from "@/lib/link-type";
 import { footerLinks } from "@/types/app-links";
 import { Avatar } from "@/ui/design-sytem/avatar/avatar";
+import { Button } from "@/ui/design-sytem/button/button";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,13 +34,9 @@ export const Footer = () => {
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </Typography>
-          <div className="flex items-center gap-4 pt-5">
-            <button className="w-full border border-gray-400 px-5 py-1 text-sm text-white rounded ">
-              voir plus
-            </button>
-            <button className="w-full border border-gray-400 px-5 py-1 text-sm bg-gray-800 text-white rounded">
-              voir plus
-            </button>
+          <div className="flex items-center text-white gap-4 pt-5">
+            <Button variant="disabled">voir plus</Button>
+            <Button variant="outline">voir plus</Button>
           </div>
         </div>
         <div></div>

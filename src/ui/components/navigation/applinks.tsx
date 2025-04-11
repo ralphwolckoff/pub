@@ -36,7 +36,7 @@ export const footerUsersLinks: Applinks[] = [
   },
   {
     label: "Inscription",
-    baseUrl: "/connexion/inscription",
+    baseUrl: "/connexion/login",
     type: "internal",
   },
   {

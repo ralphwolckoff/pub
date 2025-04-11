@@ -12,6 +12,7 @@ interface Props {
     | "lead"
     | "body-lg"
     | "body-base"
+    | "body-xs"
     | "body-sm"
     | "caption1"
     | "caption2"
@@ -70,6 +71,9 @@ export const Typography = ({
     case "body-base":
       variantStyle = "text-base";
       break;
+    case "body-xs":
+      variantStyle = "text-xs";
+      break;
     case "body-sm":
       variantStyle = "text-sm";
       break;
@@ -99,16 +103,16 @@ export const Typography = ({
       colorStyle = "text-gray-700";
       break;
     case "primary":
-      colorStyle = "text-primary";
+      colorStyle = "text-[#5658cb]";
       break;
     case "secondary":
-      colorStyle = "text-secondary";
+      colorStyle = "text-[#2ab691]";
       break;
     case "danger":
-      colorStyle = "text-alert-danger";
+      colorStyle = "text-red-500";
       break;
     case "success":
-      colorStyle = "text-alert-success";
+      colorStyle = "text-green-500";
       break;
     case "warning":
       colorStyle = "text-alert-warning";

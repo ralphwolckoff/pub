@@ -1,6 +1,7 @@
 import { Button } from "@/ui/design-sytem/button/button";
 import { Avatar } from "@/ui/design-sytem/avatar/avatar";
 import { Typography } from "@/ui/design-sytem/typography/Typography";
+import { ActiveLink } from "./active-link";
 import Link from "next/link";
 
 export default function Navigation() {
@@ -10,26 +11,33 @@ export default function Navigation() {
         <Avatar size="small" src="/assets/imgs/Calque3.png" alt="description" />
         <Typography variant="body-sm">Audrey</Typography>
       </div>
-      <div className="flex items-center gap-2">
-        <Link href="#/" className="p-2 hover:bg-gray-300 rounded-md">
-          Home
-        </Link>
+      <div className="flex items-center gap-7">
+        <ActiveLink href="/">Home</ActiveLink>
 
-        <Link href="#/about" className="p-2 hover:bg-gray-300 rounded-md">
-          <select name="About" id="about">
+        <ActiveLink href="#/about">
+          <select name="products" id="about">
             <option value="about">About</option>
             <option value="team">Team</option>
             <option value="services">Services</option>
             <option value="contact">Contact</option>
           </select>
-        </Link>
-        <Link href="#/contact" className="p-2 hover:bg-gray-300 rounded-md">
-          Contact
-        </Link>
+        </ActiveLink>
+        <ActiveLink href="#/services">
+          <select value="Blogs" id="blogs">
+            <option value="blogs">Blogs</option>
+            <option value="blogs">Blogs</option>
+            <option value="blogs">Blogs</option>
+            <option value="blogs">Blogs</option>
+          </select>
+        </ActiveLink>
+        <ActiveLink href="#/contact">pressing</ActiveLink>
+        <ActiveLink href="#/contact">About us</ActiveLink>
       </div>
-      <div className="flex items-center text-gray gap-2">
-        <Button>Log In</Button>
-        <Button variant="secondary">Sign In</Button>
+      <div className="flex items-center animation text-gray gap-2">
+        <Button baseUrl="/connexion/login">Log In</Button>
+        <Button baseUrl="/connexion" variant="secondary">
+          Sign In
+        </Button>
       </div>
     </div>
   );

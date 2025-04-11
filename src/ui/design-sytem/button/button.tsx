@@ -57,14 +57,14 @@ export const Button = ({
       break;
     case "outline":
       variantStyle =
-        "bg-white hover:bg-gray-400/50 border border-gray-500 text-gray-900 rounded";
+        "bg-gray-800 hover:bg-gray-400/50 border border-gray-500 text-white rounded-[5px]";
       break;
     case "disabled":
       variantStyle =
-        "bg-gray-400 border border-gray-500 text-gray-500 rounded cursor-not-allowed";
+        "bg-gray border border-gray-500 text-gray-500 rounded-[5px]";
       break;
     case "success":
-      variantStyle = "bg-secondary hover:bg-secondary-400 text-white rounded";
+      variantStyle = "bg-amber-200 hover:bg-amber-300 text-white rounded-full";
       break;
     case "danger":
       variantStyle =
