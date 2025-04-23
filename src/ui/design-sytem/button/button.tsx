@@ -98,7 +98,7 @@ export const Button = ({
       sizeStyle = `text-caption2 font-medium ${
         variant === "ico"
           ? "flex items-center justify-center w-[50px] h-[50px]"
-          : "px-[18px] py-[5px]"
+          : "px-[18px] py-[8px]"
       }`;
       icoSize = 20;
       break;

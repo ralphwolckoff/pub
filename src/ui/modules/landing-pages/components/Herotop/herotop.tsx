@@ -5,7 +5,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 export const HeroTop = () => {
   return (
-    <Container className="px-2 py-3">
+    <Container className="py-3">
       <a href="#/">
         <div className="relative  h-[626px] rounded-[20px] overflow-hidden">
           <div className="relative flex items-end h-full  opacity-90 px-10 py-10 z-10 bg-gradient-to-r from-[#f6f6f6]/0 to-[#000000]/80">
@@ -13,15 +13,19 @@ export const HeroTop = () => {
               <Typography variant="caption3" theme="white" component="span">
                 Featured
               </Typography>
-              <div className="flex items-center justify-between  gap-4">
-                <Typography variant="h5" theme="white" weight="medium">
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit. Placeat, hic?
-                </Typography>
+              <div className="flex items-center justify-between text-left  gap-4">
+                <div>
+                  <Typography variant="h4" theme="white" weight="medium">
+                    Breaking Into Product Design:
+                  </Typography>
+                  <Typography variant="h4" theme="white" weight="medium">
+                    Advice from Untitled Founder, Frankie
+                  </Typography>
+                </div>
                 <RiArrowRightLine size={42} className="text-white" />
               </div>
               <Typography
-                variant="caption2"
+                variant="body-sm"
                 component="p"
                 theme="white"
                 className="text-l w-200"
@@ -37,7 +41,7 @@ export const HeroTop = () => {
           </div>
           <Image
             fill
-            src="/assets/imgs/photo.jpg"
+            src="/assets/imgs/pexels.jpg"
             alt=""
             className="object-cover object-center"
           />

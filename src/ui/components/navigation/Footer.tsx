@@ -15,7 +15,7 @@ export const Footer = () => {
     <FooterLink key={uuidv4()} data={colonLinks} />
   ));
   return (
-    <Box className="bg-gray-950 overflow-hidden">
+    <Box className="bg-gray-950 overflow-hidden m-4">
       <Container>
         <div className="flex flex-col items-center gap-2 py-10">
           <Typography

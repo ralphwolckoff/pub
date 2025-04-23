@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <div className="flex items-center text-sm justify-between px-10 ">
+    <div className="flex items-center text-sm justify-between pt-3 px-5 ">
       <div className="flex items-center gap-2">
         <Avatar size="small" src="/assets/imgs/Calque3.png" alt="description" />
         <Typography variant="body-sm">Audrey</Typography>

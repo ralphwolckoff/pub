@@ -1,11 +1,13 @@
 import bcrypt from "bcryptjs";
-import { PrismaClient } from "@prisma/client";
+
 import { NextApiRequest, NextApiResponse } from "next";
 import jwt from "jsonwebtoken";
+import { PrismaClient } from "@/generated/prisma";
 
 const prisma = new PrismaClient();
+
 export default async function Login(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === "POST") {
+  if (req.method == "POST") {
     const { email, password } = req.body;
 
     if (email == null || password == null) {

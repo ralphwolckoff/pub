@@ -13,17 +13,8 @@ export default async function Register(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== "POST") {
-    const {
-      email,
-      password,
-      how_did_hear,
-      username,
-      imageprofile,
-      bio,
-      title,
-      content,
-    } = req.body;
+  if (req.method == "POST") {
+    const { email, password, how_did_hear } = req.body;
     if (email == null || password == null) {
       return res.status(400).json({ error: "missing parameters" });
     }
@@ -47,20 +38,6 @@ export default async function Register(
           email,
           password: hashedpassword,
           how_did_hear,
-          profile: {
-            create: {
-              bio,
-              username,
-              imageprofile,
-            },
-          },
-          posts: {
-            create: {
-              title,
-              content,
-              published: true,
-            },
-          },
         },
         include: {
           profile: true,
